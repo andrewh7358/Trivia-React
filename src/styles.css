@@ -1,0 +1,33 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 2rem;
+  background-color: lightcoral;
+}
+
+.card {
+  width: 400px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 16px;
+}
+
+.text {
+  margin-bottom: 16px;
+}
+
+.flexCenter {
+  display: flex;
+  justify-content: center;
+}
+
+.optionsContainer {
+  margin-bottom: 16px;
+}
+
+.optionsRow {
+  display: grid;
+  gap: 8px;
+  grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 8px;
+}
