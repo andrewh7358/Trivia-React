@@ -5,9 +5,14 @@ interface TriviaResponse {
   incorrect_answers: string[]
 }
 
-const url = 'https://opentdb.com/api.php?amount=1&type=multiple'
+const trivia: TriviaResponse[] = []
+const url = 'https://opentdb.com/api.php?amount=5&type=multiple'
 
 export const getTrivia = async () => {
+  if (trivia.length) {
+    return trivia.pop()
+  }
+  
   let res = await fetch(url)
   let data = await res.json() as { response_code: number, results: TriviaResponse[] }
 
@@ -17,5 +22,7 @@ export const getTrivia = async () => {
     data = await res.json() as { response_code: number, results: TriviaResponse[] }
   }
 
-  return data.results[0]
+  trivia.push(...data.results)
+
+  return trivia.pop()
 }
