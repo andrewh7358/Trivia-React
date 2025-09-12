@@ -2,9 +2,7 @@
 
 A simple Trivia app in TypeScript and React. This project uses the [Open Trivia DB API](https://opentdb.com/).
 
-[Watch a short demo.](demo.mov)
-
-<img src='./screenshot.png' alt='screenshot' height='400px' />
+<img src='./demo.gif' alt='demo' height="400px"/>
 
 ## How to run
 
