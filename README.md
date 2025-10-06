@@ -1,6 +1,10 @@
 # Trivia
 
-A simple Trivia app in TypeScript and React. This project uses the [Open Trivia DB API](https://opentdb.com/).
+This is a simple trivia app I made in TypeScript and React.
+
+This trivia app provides multiple choice trivia questions of varying categories.
+
+This project uses [Open Trivia Database](https://opentdb.com/). Open Trivia Database is a user-contributed trivia question database that provides a JSON API to to retrieve trivia questions.
 
 <img src='./demo.gif' alt='demo' height="400px"/>
 
