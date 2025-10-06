@@ -4,13 +4,13 @@ export const unescapeText = (text: string) => {
   return textarea.value
 }
 
-export const shuffleOptions = (answer1: string, answer2: string[]) => {
-  const options = [answer1].concat(answer2)
+export const shuffleOptions = (correct_answer: string, incorrect_answers: string[]) => {
+  const options = [correct_answer].concat(incorrect_answers)
 
   for (let i = options.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
     [options[i], options[j]] = [options[j], options[i]]
   }
 
-  return { options, correctIndex: options.findIndex((option) => option === answer1) }
+  return { options, correctIndex: options.findIndex((option) => option === correct_answer) }
 }
